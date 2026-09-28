@@ -1,23 +1,23 @@
 {
 	"schemaVersion": 1,
-	"id": "paragraphs-port",
-	"version": "${version}",
-	"name": "Paragraphs port",
+	"id": "${mod_id}",
+	"version": "${mod_version}",
+	"name": "${mod_name}",
 	"description": "Lets you type illegal characters",
 	"authors": [
-		"Nobodyasidentity"
+		"${mod_author}"
 	],
 	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.github.nobodyasidentity.paragraphs.ParagraphsPort"
+			"${maven_group}.ParagraphsPortFabric"
 		]
 	},
 	"mixins": [
 		"paragraphs-port.mixins.json"
 	],
 	"depends": {
-		"minecraft": ">=26.1"
+		"minecraft": ">=${minecraft_version}"
 	}
 }
